@@ -1,0 +1,27 @@
+export const cites = {
+  "0": "Abdoun",
+  "1": "Al Abdali",
+  "2": "Sweifieh",
+  "3": "Jabal Amman",
+  "4": "Rainbow Street",
+  "5": "Shmeisani",
+  "6": "Khalda",
+  "7": "Dabouq",
+  "8": "Tla Al-Ali",
+  "9": "Jubeiha",
+  "10": "Marka",
+  "11": "Gardens Street",
+  "12": "Bayader",
+  "13": "Al Weibdeh",
+  "14": "Um Uthaina",
+  "15": "Al Rawnaq",
+  "16": "Madinat Al-Hussein",
+  "17": "Al Jandaweel",
+}
+export const stateTypes = {
+  "0": "House",
+  "1": "Land",
+  "2": "Studio",
+  "3": "Townhome",
+  "4": "Farm",
+}

@@ -1,0 +1,15 @@
+.landing-image {
+  width: 100vw;
+  height: calc(100vh);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.required-input::after {
+  content: '*';
+  position: absolute;
+  right: -10px;
+  top: 2px;
+  @apply text-brand-700;
+}

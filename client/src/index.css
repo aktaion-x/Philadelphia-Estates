@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  @apply container px-3 py-32;
+}
+.page {
+  @apply container px-3 py-32 mx-auto;
+}
+body {
+  font-family: 'Arvo', serif;
+  cursor: default;
+  background: #ffffff;
+}
+.btn {
+  @apply font-semibold px-6 py-3 bg-brand-700 text-white transition-shadow duration-300 hover:shadow-lg hover:shadow-[#f1354278] whitespace-nowrap;
+}
+.btn-without-bg {
+  @apply font-semibold px-5 py-2 transition-shadow duration-300 hover:shadow-sm hover:shadow-[#f1354278];
+}
+.nav-link.active {
+  color: #ffffff;
+}
