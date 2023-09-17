@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { stateTypes } from "../../utils/enumsParser";
 import { Link } from "react-router-dom";
 import { stateFeatures } from '../../utils/stateFeatures';
@@ -33,10 +33,14 @@ function SectionTwo() {
             </div>
             <ul className="border-2 border-gray-500 border-y-0">
               {Object.keys(stateFeatures[currentType as keyof typeof stateFeatures]).map((key) => (
-                <li key={key} className="border-b-2 border-gray-500 py-3 flex justify-between items-center">
-                  <span className="w-full border-r-2 border-gray-500">{key}</span>
-                  <span className="w-full">{stateFeatures[currentType as keyof typeof stateFeatures][key]}</span>
-                </li>
+                <React.Fragment key={key}>
+                  {key !== "startFrom" && (
+                    <li className="border-b-2 border-gray-500 py-3 flex justify-between items-center">
+                      <span className="w-full border-r-2 border-gray-500">{key}</span>
+                      <span className="w-full">{stateFeatures[currentType as keyof typeof stateFeatures][key]}</span>
+                    </li>
+                  )}
+                </React.Fragment>
               ))}
             </ul>
             <Link to={`/explore?type=${currentType}`} className="text-xl font-semibold w-11/12 py-3 bg-brand-700 text-white flex justify-center items-center mt-5 mx-auto">

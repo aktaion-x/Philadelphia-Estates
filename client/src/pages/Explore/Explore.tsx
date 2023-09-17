@@ -47,7 +47,7 @@ function Explore() {
     <div className="page">
       <div className=" mb-16 mt-10">
         <h1 className="text-4xl font-bold">Explore Real-States</h1>
-        <FilterPosts handleFilter={handleFilter} defaultTypeFilter={searchParams.get("type") ? searchParams.get("type") : ""} />
+        <FilterPosts handleFilter={handleFilter} defaultTypeFilter={searchParams.get("type") ? searchParams.get("type")! : ""} />
       </div>
       {posts.length === 0 && !error && !isPending && (
         <div className="text-xl font-semibold flex gap-2 mb-3 items-center justify-center">There is no States to show!</div>

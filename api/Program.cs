@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
       options.AddPolicy("AllowReactApp", builder =>
       {
         builder
-              .WithOrigins("http://localhost:3000") // Update this with the actual origin of your React app
+              .WithOrigins("http://localhost:8892") // Update this with the actual origin of your React app
               .AllowAnyHeader()
               .AllowAnyMethod();
       });
@@ -67,7 +67,7 @@ app.UseSwaggerUI((c) =>
   c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo Api v1");
 });
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 // Here, you're allowing CORS for an array of specific domains.
 app.UseCors("AllowReactApp"); // Apply the CORS policy
 app.UseAuthentication();
@@ -75,4 +75,4 @@ app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
 
-app.Run();
+app.Run("http://0.0.0.0:5000");

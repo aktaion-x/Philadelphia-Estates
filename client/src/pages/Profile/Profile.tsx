@@ -12,7 +12,6 @@ function Profile() {
   const { userData } = useAuthContext();
   const { getUserPosts, error, isPending } = usePost();
   const [posts, setPosts] = useState<PostsType>([])
-  console.log(posts.length);
 
   useEffect(() => {
     let isSubscribed = true;

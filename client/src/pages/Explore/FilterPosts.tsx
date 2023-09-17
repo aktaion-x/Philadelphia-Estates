@@ -7,7 +7,6 @@ type FilterPostsTypes = {
 }
 
 function FilterPosts({ handleFilter, defaultTypeFilter }: FilterPostsTypes) {
-  console.log(defaultTypeFilter);
 
   const [typeFilter, setTypeFilter] = useState(defaultTypeFilter);
   const [cityFilter, setCityFilter] = useState("");

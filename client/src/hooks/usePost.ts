@@ -16,7 +16,6 @@ const usePost = () => {
     setError(null);
     setIsPending(true);
     try {
-      console.log(`/Post/GetAllPosts?${typeFilter ? "stateType=" + typeFilter : ""}&${cityFilter ? "city=" + cityFilter : ""}&${priceFilter ? "orderBy=" + priceFilter : ""}`)
       const res = await api.get<PostsType, AxiosResponse>(`/Post/GetAllPosts?${typeFilter ? "stateType=" + typeFilter : ""}&${cityFilter ? "city=" + cityFilter : ""}&${priceFilter ? "orderBy=" + priceFilter : ""}`);
       setIsPending(false);
       return res;
@@ -37,7 +36,6 @@ const usePost = () => {
       setIsPending(false);
       return res;
     } catch (error) {
-      console.log(error);
 
       if (axios.isAxiosError(error) && error.message) {
         const message = error.response?.data ? error.response?.data : error.message
@@ -90,7 +88,6 @@ const usePost = () => {
       if (image) {
         formData.append("image", image)
       }
-      console.log(formData.get("email"));
 
       const res = await api.post<PostType>(`/Post/CreatePost`, formData, {
         headers: {
@@ -135,12 +132,10 @@ const usePost = () => {
           Authorization: `Bearer ${userData?.token}`
         }
       });
-      console.log(res);
 
       setIsPending(false);
       return res;
     } catch (error) {
-      console.log(error);
 
       if (axios.isAxiosError(error) && error.message) {
         const message = error.response?.data ? error.response?.data : error.message

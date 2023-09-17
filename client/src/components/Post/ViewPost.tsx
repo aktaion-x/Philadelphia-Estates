@@ -18,7 +18,6 @@ function ViewPost() {
       const res = await getPost(id);
       if (isSubscribe && res?.status === 200) {
         const data = res?.data;
-        console.log(res);
         setPost(data);
       }
     }

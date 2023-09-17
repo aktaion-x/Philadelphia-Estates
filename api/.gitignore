@@ -20,6 +20,9 @@
 *.log.*
 *.mdf
 *.ldf
+RealState
+RealState.db-wal
+RealState.db-shm
 
 .vscode/
 .idea/

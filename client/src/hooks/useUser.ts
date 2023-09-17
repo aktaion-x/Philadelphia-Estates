@@ -34,7 +34,6 @@ const useUser = () => {
         phone,
         password
       });
-      console.log(res);
 
       dispatch({ type: "LOGIN", payload: res.data });
       setIsPending(false);

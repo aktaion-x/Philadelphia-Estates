@@ -35,7 +35,6 @@ export const AuthContext = createContext<AuthContextValue | null>({
 const authReducer = (state: AuthState, action: LoginAction | LogoutAction) => {
   switch (action.type) {
     case "LOGIN":
-      console.log("AuthContext: ", action.payload);
       localStorage.setItem("userData", JSON.stringify(action.payload));
       return { userData: action.payload };
     case "LOGOUT":
