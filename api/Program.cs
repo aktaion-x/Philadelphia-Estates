@@ -12,13 +12,14 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("RealState") ?? "Data Source=RealState.db";
 builder.Services.AddCors(options =>
     {
-      options.AddPolicy("AllowReactApp", builder =>
-      {
-        builder
-              .WithOrigins("http://localhost:8892") // Update this with the actual origin of your React app
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-      });
+       options.AddPolicy("AllowAll",
+             builder =>
+             {
+                 builder
+                 .AllowAnyOrigin() 
+                 .AllowAnyMethod()
+                 .AllowAnyHeader();
+             });
     });
 builder.Services.AddAuthentication(options =>
 {
@@ -69,7 +70,7 @@ app.UseSwaggerUI((c) =>
 
 // app.UseHttpsRedirection();
 // Here, you're allowing CORS for an array of specific domains.
-app.UseCors("AllowReactApp"); // Apply the CORS policy
+app.UseCors("AllowAll"); // Apply the CORS policy
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
