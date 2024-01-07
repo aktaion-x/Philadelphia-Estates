@@ -31,11 +31,11 @@ public class PostService
 
     if (!string.IsNullOrEmpty(orderBy))
     {
-      if (orderBy.ToLower().Equals("DESC"))
+      if (orderBy.ToLower().Equals("desc"))
       {
         query = query.OrderByDescending(post => (float)post.Price);
       }
-      else
+      else if (orderBy.ToLower().Equals("asc"))
       {
         query = query.OrderBy(post => (float)post.Price);
       }
