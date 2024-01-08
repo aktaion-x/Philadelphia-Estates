@@ -15,7 +15,7 @@ function UserProfile() {
         <div className='absolute w-fit whitespace-nowrap text-center top-full left-1/2 translate-y-6 -translate-x-1/2 bg-black py-3 rounded-xl'>
           <ul >
             <Link className='px-10 block py-2 hover:bg-gray-900' to="/profile">Profile</Link>
-            <Link className='px-10 block py-2 hover:bg-gray-900' to="/add-post">Post a State</Link>
+            <Link className='px-10 block py-2 hover:bg-gray-900' to="/add-post">Post a Estate</Link>
           </ul>
         </div>
       )}

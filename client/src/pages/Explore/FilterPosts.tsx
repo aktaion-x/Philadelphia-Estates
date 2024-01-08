@@ -15,7 +15,7 @@ function FilterPosts({ handleFilter, defaultTypeFilter }: FilterPostsTypes) {
   return (
     <form className="my-5 flex gap-5 flex-wrap items-end" onSubmit={(e) => (handleFilter(e, typeFilter, cityFilter, priceFilter))}>
       <label className="flex flex-col">
-        <span>State Type</span>
+        <span>Estate Type</span>
         <select value={typeFilter} onChange={e => {
           if (e.target.value == 'any') {
             setTypeFilter("")

@@ -6,7 +6,7 @@ function Footer() {
     <div className="bg-black text-white px-5">
       <div className="container  py-10 md:py-32 mx-auto flex justify-between gap-14 flex-wrap">
         <div className="flex-1">
-          <h2 className="font-bold text-xl mb-4">My Real-State</h2>
+          <h2 className="font-bold text-xl mb-4">My Real-Estate</h2>
           <p className="text-gray-300 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni tenetur eius eaque, nulla quasi non reiciendis? Nostrum, aut alias, voluptas</p>
           <div className="font-bold">
             <div className="flex gap-2 items-center mb-1">

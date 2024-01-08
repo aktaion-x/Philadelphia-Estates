@@ -39,7 +39,7 @@ function ViewPost() {
           <img className="md:h-[700px] h-96 object-cover w-full md:w-[50%] basis-1/2" src={`${import.meta.env.VITE_SERVER}/${post.imagePath}`} alt="" />
           <div className="p-5 flex justify-between w-full md:w-[50%] basis-1/2">
             <div>
-              <div className="mb-5"><span className='text-xl font-semibold block'>State Type:</span><span className='font-semibold mt-1 block mr-0.5' >{stateTypes[post.stateType.toString() as keyof typeof stateTypes]}</span></div>
+              <div className="mb-5"><span className='text-xl font-semibold block'>Estate Type:</span><span className='font-semibold mt-1 block mr-0.5' >{stateTypes[post.stateType.toString() as keyof typeof stateTypes]}</span></div>
               <ul className="flex flex-col gap-1 mb-5">
                 <span className='text-xl font-semibold'>Features</span>
                 {featuresParser(post.features).map(features => (

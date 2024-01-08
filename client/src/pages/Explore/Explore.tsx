@@ -46,7 +46,7 @@ function Explore() {
   return (
     <div className="page">
       <div className=" mb-16 mt-10">
-        <h1 className="text-4xl font-bold">Explore Real-States</h1>
+        <h1 className="text-4xl font-bold">Explore Real-Estates</h1>
         <FilterPosts handleFilter={handleFilter} defaultTypeFilter={searchParams.get("type") ? searchParams.get("type")! : ""} />
       </div>
       {posts.length === 0 && !error && !isPending && (

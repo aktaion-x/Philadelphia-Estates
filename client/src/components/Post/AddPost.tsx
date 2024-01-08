@@ -58,7 +58,7 @@ function AddPost() {
         <label className="my-6 flex flex-col">
           <span className="required-input text-gray-800 relative w-fit">Type</span>
           <select onChange={(e) => setStateType(e.target.value)} className="border px-3 py-2 bg-transparent text-gray-600 text-lg outline-none focus:border-gray-800">
-            <option disabled selected className="text-gray-400">Select State Type</option>
+            <option disabled selected className="text-gray-400">Select Estate Type</option>
             {Object.keys(stateTypes).map((typeId) => (
               <option key={typeId} value={typeId}>{stateTypes[typeId as keyof typeof stateTypes]}</option>
             ))}

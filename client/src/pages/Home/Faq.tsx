@@ -19,7 +19,7 @@ function Faq() {
                   setActiveFaq(1)
                 }
               }} className="flex justify-between items-center py-3 px-2 md:px-7 font-bold text-lg cursor-pointer transition-colors hover:bg-brand-700 hover:text-white">
-                <span>1. What is special about comparing real-state deals?</span>
+                <span>1. What is special about comparing real-estate deals?</span>
                 <span className="ml-2"> <AiOutlineArrowDown /> </span>
               </div>
               <div className="overflow-hidden">
@@ -34,7 +34,7 @@ function Faq() {
                   setActiveFaq(2)
                 }
               }} className="flex justify-between items-center py-3 px-2 md:px-7 font-bold text-lg cursor-pointer transition-colors hover:bg-brand-700 hover:text-white ">
-                <span>2. What is special about comparing real-state deals?</span>
+                <span>2. What is special about comparing real-estate deals?</span>
                 <span className="ml-2"> <AiOutlineArrowDown /> </span>
               </div>
               <div className="overflow-hidden">
@@ -49,7 +49,7 @@ function Faq() {
                   setActiveFaq(3)
                 }
               }} className="flex justify-between items-center py-3 px-2 md:px-7 font-bold text-lg cursor-pointer transition-colors hover:bg-brand-700 hover:text-white ">
-                <span>3. What is special about comparing real-state deals?</span>
+                <span>3. What is special about comparing real-estate deals?</span>
                 <span className="ml-2"> <AiOutlineArrowDown /> </span>
               </div>
               <div className="overflow-hidden">

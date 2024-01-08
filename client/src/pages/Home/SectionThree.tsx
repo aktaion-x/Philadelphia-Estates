@@ -3,7 +3,7 @@ function SectionThree() {
     <div className="mt-32">
       <div className="bg-black py-20 w-full">
         <div className="text-white text-center max-w-[700px] mx-auto px-10">
-          <h1 className="font-extrabold mb-10 text-6xl">Real State Jordan</h1>
+          <h1 className="font-extrabold mb-10 text-6xl">Real Estate Jordan</h1>
           <p className="text-lg font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat libero est id?</p>
         </div>
       </div>

@@ -44,7 +44,7 @@ function Profile() {
             <div className="font-semibold">States posted: <span className="font-medium">{posts.length}</span></div>
           </div>
           <Link className="btn w-fit ml-auto" to='/add-post'>
-            Add new state
+            Add new estate
           </Link>
         </div>
         <div className="flex gap-10 flex-col mt-32">
@@ -52,7 +52,7 @@ function Profile() {
             <UserPost key={Math.random()} setPosts={setPosts} post={post} />
           ))}
           {posts.length === 0 && !error && !isPending && (
-            <div className="text-xl ">You don't have states to show! <Link className="hover:text-brand-700 transition-colors underline" to='/add-post'>Add one!</Link></div>
+            <div className="text-xl ">You don't have estates to show! <Link className="hover:text-brand-700 transition-colors underline" to='/add-post'>Add one!</Link></div>
           )}
           {isPending && (
             <div className="text-xl font-semibold flex gap-2 mb-3 items-center justify-center">Loading <LoadingSpinner className="w-5 h-5 inline" /> </div>
